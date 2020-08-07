@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Dashboard</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arvo:ital@1&family=Nova+Mono&family=Slabo+27px&family=Source+Code+Pro:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <h1 class="display-4">Weather Dashboard</h1>
+    <p id="currentDay" class="lead"></p>
+  </header>
+
+  <div class="container containerSearch">
+    <aside>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="container-history">
+            <div class="input-group input-group-lg justify-content-center">
+              <div class="input-group-prepend">
+              </div>
+              <h5>Search for a City</h5>
+              <input type="text" class="search-control" aria-label="Large">
+              <button class="btn search" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <br>
+
+            <div class="card card-list" style="width: 12rem;">
+              <ul class="list-group list-group-flush city-list">
+              </ul>
+            </div>
+          </div>
+    </aside>
+  </div>
+
+
+  <div class="container containerInformation">
+    <section>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card text-white bg-dark" style="max-width: 100rem;">
+            <div class="card-header header-0 "></div>
+            <div class="card-body info">
+              <h5 class="city"></h5>
+              <div class="card-title card-title-0 icon"></div>
+              <p class="card-text temp-0"></p>
+              <p class="card-text humidity-0"></p>
+              <p class="card-text windSpeed-0"></p>
+              <p class="card-text uvIndex-0"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h5>5 Day Forecast:</h5>
+      <br>
+      <div class="row targetas justify-content-center">
+        <div class="col-xs-2">
+          <div class="card border-info" style="max-width: 12rem;">
+            <div class="card-header header-1"></div>
+            <div class="card-body text-info">
+              <div class="card-title card-title-1"></div>
+              <p class="card-text temp-1"></p>
+              <p class="card-text humidity-1"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-2">
+          <div class="card border-info ml-2" style="max-width: 12rem;">
+            <div class="card-header header-2"></div>
+            <div class="card-body text-info">
+              <div class="card-title card-title-2"></div>
+              <p class="card-text temp-2"></p>
+              <p class="card-text humidity-2"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-2">
+          <div class="card border-info ml-2" style="max-width: 12rem;">
+            <div class="card-header header-3"></div>
+            <div class="card-body text-info">
+              <div class="card-title card-title-3"></div>
+              <p class="card-text temp-3"></p>
+              <p class="card-text humidity-3"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-2">
+          <div class="card border-info ml-2" style="max-width: 12rem;">
+            <div class="card-header header-4"></div>
+            <div class="card-body text-info">
+              <div class="card-title card-title-4"></div>
+              <p class="card-text temp-4"></p>
+              <p class="card-text humidity-4"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-2">
+          <div class="card border-info ml-2" style="max-width: 12rem;">
+            <div class="card-header header-5"></div>
+            <div class="card-body text-info">
+              <div class="card-title card-title-5"></div>
+              <p class="card-text temp-5"></p>
+              <p class="card-text humidity-5"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
